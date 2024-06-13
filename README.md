@@ -1,46 +1,44 @@
-# Getting Started with Create React App
+# The Movie DB Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React application built with TypeScript that utilizes The Movie Database (TMDb) API to display information about movies and TV shows. It also uses Redux Toolkit for state management.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Display a list of popular movies and TV shows
+- Search for movies and TV shows
+- View details of a specific movie or TV show
+- Responsive design for mobile and desktop
 
-### `yarn start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React
+- TypeScript
+- Redux Toolkit (for state management)
+- Axios (for API requests)
+- React Router (for routing)
+- CSS Modules (for styling)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting Started
 
-### `yarn test`
+To run this project locally, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository: `git clone https://github.com/VrublevskiyVolodymyr/the_movie_db_project.git`
+2. Navigate to the project directory: `cd the_movie_db_project`
+3. Install dependencies: `yarn install` or `npm install`
+4. Create a `.env` file in the root directory and add your TMDb API key: `REACT_APP_API_KEY=your_api_key_here`
+5. Start the development server: `yarn start` or `npm start`
+6. Open your browser and visit `http://localhost:3000`
 
-### `yarn build`
+## Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Use the search bar to look for movies or TV shows
+- Click on a movie or TV show to view its details
+- Navigate back to the home page by clicking on the logo in the header
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Contributing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request.
 
-### `yarn eject`
+## License
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is licensed under the MIT License. See the `LICENSE` file for details.
