@@ -1,7 +1,6 @@
 import {FC, useRef, useState} from 'react';
 import {useNavigate} from "react-router-dom";
 
-import {useAppDispatch} from "../../hooks";
 import styles from './dropMenu.module.css';
 
 interface IProps {
@@ -11,7 +10,6 @@ interface IProps {
 
 const DropMenu: FC<IProps> = ({setActiveGenre, isActive}) => {
     const navigate = useNavigate();
-    const dispatch = useAppDispatch();
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const timerRef = useRef<NodeJS.Timeout | null>(null);
 

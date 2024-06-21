@@ -20,7 +20,7 @@ const PopularMoviesList: FC<IProps> = () => {
     const dispatch = useAppDispatch();
     const navigate = useNavigate();
 
-    const [query, setQuery] = useSearchParams({page: '1'});
+    const [query] = useSearchParams({page: '1'});
     const currentPage = query.get('page') ? parseInt(query.get('page') as string, 10) : 1;
     const list = 'popular_movies';
 

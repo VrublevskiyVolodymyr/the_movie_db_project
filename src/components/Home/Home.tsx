@@ -13,7 +13,7 @@ interface IProps {
 }
 
 const Home: FC<IProps> = () => {
-    const {top_rated, now_playing, upcoming, popular, loading} = useAppSelector(state => state.movieLists)
+    const {top_rated, now_playing, upcoming, popular} = useAppSelector(state => state.movieLists)
 
     if (top_rated && now_playing && upcoming && popular) {
 

@@ -1,4 +1,4 @@
-import {FC, useCallback, useEffect} from "react";
+import {FC, useEffect} from "react";
 import Slider from 'react-slick';
 import { useNavigate, useSearchParams } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
@@ -19,7 +19,7 @@ const NowPlayingList: FC<IProps> = () => {
     const dispatch = useAppDispatch();
     const navigate = useNavigate();
 
-    const [query, setQuery] = useSearchParams({ page: '1' });
+    const [query] = useSearchParams({ page: '1' });
     const currentPage = query.get('page') ? parseInt(query.get('page') as string, 10) : 1;
     const list = 'now_playing';
 
