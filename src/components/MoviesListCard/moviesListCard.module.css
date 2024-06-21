@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+.movie {
+    width: 20%;
+    height: auto;
+    max-height: 300px;
+    border: darkred solid 0.1vw;
+    border-radius: 1.25vw;
+    margin: 0.5vw;
+    background: #bbbbbb;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    transition: all .125s ease;
+    overflow: hidden;
+}
+
+.movie:hover {
+    transform: scale(1.1);
+}
+
+#button {
+    color: var(--button-color);
+    border-radius: 1.25vw;
+    margin: 0.625vw;
+}
+
+.text {
+    text-align: center;
+    color: var(--text-color);
+}

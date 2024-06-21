@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.movies {
+    display: flex;
+    background-color: var(--movies-background-color);
+    border-radius: 1.25vw;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin: 10vh 0;
+    justify-content: space-evenly;
+}
+
+.moviesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#button {
+    color: var(--button-color);
+    padding: 0;
+}

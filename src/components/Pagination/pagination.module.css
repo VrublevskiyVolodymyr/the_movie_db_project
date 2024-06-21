@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    height: 3.5vw;
+    padding: 0;
+    margin-bottom: 2vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination li {
+    display: inline-block;
+    margin: 0 0.5vw;
+}
+
+.pagination li.disabled {
+    display: none;
+}
+
+.pagination a {
+    display: inline-block;
+    background-color: var(--button-color);
+    color: white;
+    border: 1px solid transparent;
+    width: 3.5vw;
+    height: 3.5vw;
+    text-align: center;
+    line-height: 3.5vw;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.pagination .circle {
+    width: 3.5vw;
+    height: 3.5vw;
+    background-color: var(--button-color);
+    color: black;
+    border: 1px solid transparent;
+    text-align: center;
+    line-height: 3.5vw;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.pagination li:hover a,
+.pagination li:first-child a,
+.pagination li:last-child a {
+    background-color: var(--hover-color);
+    color: var(--button-color);
+    font-weight: bold;
+}
+
+.pagination .circle:hover,
+.pagination .active .circle {
+    background-color: var(--hover-color);
+    color: var(--button-color);
+    font-weight: bold;
+}
+
+.pagination .active a {
+    background-color: var(--active-color);
+    color: var(--button-color);
+}
+

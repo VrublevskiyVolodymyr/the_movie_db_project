@@ -1,0 +1,9 @@
+.container {
+    min-height: 80vh;
+    background-color: var(--background-color);
+    transition: background-color 200ms linear;
+    background-image: var(--background-image);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}

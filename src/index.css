@@ -1,13 +1,161 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+html[data-theme='dark'] {
+
+    --button-color: #1afdfd;
+    --active-color: #168585;
+    --hover-color: #17d3d3;
+    --loader-color: #1BFFFF;
+    --title-color: #1BFFFF;
+    --background-image: url("./images/spase.jpeg");
+    --background-color: #292929;
+
+    --movies-background-color: rgba(47, 79, 79, 0.6);
+    --header-background-color: rgba(47, 79, 79, 0.6);
+    --card-background-color: rgba(186, 186, 186, 0.6);
+    --text-color: rgb(33, 37, 41);
+
+    --checbox-color: #fcfbfb;
+}
+
+html[data-theme='light'] {
+    --button-color: #c28512;
+    --active-color: #eade9f;
+    --hover-color: #64460d;
+    --title-color: #eade9f;
+    --loader-color: #c28512;
+    --background-image: url("./images/abstr.jpg");
+    --background-color: #fcfbfb;
+
+    --movies-background-color: rgba(47, 79, 79, 0.5);
+    --header-background-color: rgba(47, 79, 79, 0.8);
+    --card-background-color: rgb(190, 190, 190, 0.9);
+    --text-color: rgb(189, 129, 33);
+
+    --checbox-color: rgb(33, 37, 41);
+}
+
+button {
+    font-family: "Gochi Hand", cursive;
+    position: relative;
+    color: var(--button-color);
+    text-transform: uppercase;
+    background-color: #343a34;
+    font-size: 10px;
+    letter-spacing: 3px;
+    overflow: hidden;
+    padding: 2.5% 6%;
+    cursor: pointer;
+    border: none;
+    transition: 0.6s ease;
+}
+
+button:hover {
+    color: #333;
+    background-color: var(--button-color);
+    transition-delay: 0.5s;
+    box-shadow: 0 0 10px var(--button-color), 0 0 40px var(--button-color), 0 0 80px var(--button-color);
+}
+
+button:hover span:nth-child(1) {
+    left: 100%;
+}
+
+button:hover span:nth-child(2) {
+    top: 100%;
+}
+
+button:hover span:nth-child(3) {
+    right: 100%;
+}
+
+button:hover span:nth-child(4) {
+    bottom: 100%;
+}
+
+button span {
+    display: block;
+    position: absolute;
+    transition: 0.6s ease;
+}
+
+button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, transparent, var(--button-color));
+    transition-delay: 0.25s;
+}
+
+button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, var(--button-color));
+}
+
+button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(270deg, transparent, var(--button-color));
+    transition-delay: 0.25s;
+}
+
+button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(0, transparent, var(--button-color));
+}
+
+input {
+    font-family: "Gochi Hand", cursive;
+    position: relative;
+    color: var(--button-color);
+    background-color: transparent;
+    font-size: 20px;
+    letter-spacing: 3px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.6s ease;
+}
+
+input:hover {
+    color: #333;
+    background-color: var(--button-color);
+    transition-delay: 0.5s;
+    box-shadow: 0 0 10px var(--button-color), 0 0 40px var(--button-color), 0 0 80px var(--button-color);
+}
+
+input:hover span:nth-child(1) {
+    left: 100%;
+}
+
+input:hover span:nth-child(2) {
+    top: 100%;
+}
+
+input:hover span:nth-child(3) {
+    right: 100%;
+}
+
+input:hover span:nth-child(4) {
+    bottom: 100%;
 }

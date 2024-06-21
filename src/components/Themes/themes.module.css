@@ -1,0 +1,72 @@
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 4rem;
+    height: 1.5rem;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background-color);
+    transition: background-color 0.4s;
+    box-shadow: 0 0 2px var(--button-color);
+}
+
+.slider:before {
+    position: absolute;
+    content: '';
+    height: 14px;
+    width: 14px;
+    left: 7px;
+    bottom: 5px;
+    background-color: var(--checbox-color);
+    transition: transform 0.4s;
+}
+
+input:checked + .slider:before {
+    transform: translateX(35px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: opacity 0.4s, left 0.4s, right 0.4s;
+    opacity: 0;
+    color: var(--button-color);
+}
+
+.icon:first-of-type {
+    left: 8px;
+}
+
+.icon:last-of-type {
+    right: 8px;
+}
+
+input:checked + .slider .icon:first-of-type {
+    opacity: 1;
+}
+
+input:not(:checked) + .slider .icon:last-of-type {
+    opacity: 1;
+}
