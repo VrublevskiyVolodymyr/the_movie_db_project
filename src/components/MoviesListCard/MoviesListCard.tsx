@@ -48,7 +48,7 @@ const MoviesListCard: FC<IPropsType> = ({movie}) => {
             {id && <StarRating key={id} vote_average={vote_average}/>}
 
             <button id={styles.button} className="btn btn-dark" onClick={() => handleClick(movie)}>
-                <span></span> <span></span> <span></span> <span></span> Vive more
+                <span></span> <span></span> <span></span> <span></span> View more
             </button>
 
         </div>
